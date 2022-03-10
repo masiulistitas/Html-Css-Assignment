@@ -247,6 +247,64 @@ header p, .footer-upsell p, .showcase-text p {
     bottom:270px;
 }
 
+/* Bottom upsell */
+
+.footer-upsell {
+    position:relative;
+    width:90%;
+    margin:0 auto;
+    padding-bottom: 3rem;
+    padding-top:2rem;
+}
+
+.footer-nft {
+    width: 160px;
+    position: absolute;
+    left:280px;
+    top:125px
+}
+
+/* Footer */
+
+footer {
+    width:90%;
+    margin:4rem auto;
+}
+
+.footer-p {
+    padding: 1.5rem 0;
+}
+
+.page-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:max-content;
+}
+
+.contact {
+    height: 110px;
+}
+
+ul h3 {
+    margin-top:3rem;
+    margin-bottom:1rem;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+
+.copyright {
+    margin-top:4rem;
+    text-align: left;
+    color:grey;
+}
+
+.page-links a {
+    text-decoration: none;
+    color:black;
+}
 
 @media only screen and (min-width: 1440px) {
 
@@ -357,3 +415,36 @@ header p, .footer-upsell p, .showcase-text p {
     .hr-over {
         display:none;
     }
+
+    
+    /* Footer */
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact {
+        height: inherit;
+    }
+
+     .about, .nft, .contact, .social {
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .top-ul, .bottom-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul h3 {
+        margin-top:0rem;
+    }
+
+}
