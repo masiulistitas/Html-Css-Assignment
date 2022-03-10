@@ -110,6 +110,143 @@ header p, .footer-upsell p, .showcase-text p {
     color: white;
 }
 
+/* Top Upsell */
+
+.upsell {
+    margin: 5rem 0;
+    padding-top:6rem;
+    padding-bottom: 2rem;
+    background:
+    linear-gradient(to right top, rgb(241, 94, 68), rgb(247, 144, 49), rgb(224, 221, 45))
+    ;
+}
+
+/* Press */
+
+.press {
+    margin:0 auto;
+    width:90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:stretch;
+}
+
+.press div {
+    display: inline-block;
+}
+
+.press img:hover {
+    
+    transform: scale(1.05);
+}
+
+.crop {
+    width: 137px;
+    overflow: hidden;
+}
+
+.press img {
+    padding-top:1rem;
+    transition: 500ms ease-in-out;
+}
+
+.mobile-hidden {
+    display:none;
+}
+
+/* Showcase */
+
+.showcase-text, .upsell-text {
+    width:90%;
+    margin:0 auto;
+}
+
+.showcase-text a {
+    color:black;
+}
+
+.showcase-text a:hover, .page-links a:hover {
+    color:grey;
+}
+
+/* Cards */
+
+.card-row {
+    display:flex;
+    flex-direction: row;
+    width:90%;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top:3rem;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+    width:350px auto;
+    transition: 500ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    padding:0.25rem 0;
+}
+
+.card-image img {
+    display: block;
+}
+
+.card-textbox {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 0 15px 15px;
+}
+
+.right-box {
+    text-align: right;
+}
+
+.series {
+    font-size: small;
+    color:orangered;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.bid {
+    font-size: small;
+}
+
+.eth{
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+
+.sequence {
+    color:grey;
+}
+
+/* Break lines */
+
+.line {
+    border-color: rgba(216, 216, 216, 0.315);
+
+}
+
+.hr-over {
+    position:relative;
+    bottom:270px;
+}
+
 
 @media only screen and (min-width: 1440px) {
 
@@ -157,4 +294,66 @@ header p, .footer-upsell p, .showcase-text p {
 
     .top-con {
         width:420px;
+    }
+
+    /* Top Upsell */
+
+    .upsell {
+        width:90%;
+        margin:5rem auto;
+        border-radius: 15px;
+
+    }
+
+    .upsell-text {
+        width:100%;
+        padding:2rem;
+        text-align: left;
+        display:inline-block;
+    }
+
+    .mobile-hidden {
+        display:block;
+    }
+
+    /* Press */
+
+    .press {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items:stretch;
+    }
+
+    .crop {
+        width:100%;
+    }
+
+    /* Showcase */
+
+    .showcase-text {
+        width:90%;
+    }
+
+    /* Bottom Upsell */
+
+    .footer-upsell {
+        width:90%;
+        margin:0 auto;
+        position:relative;
+    }
+    
+    .footer-nft {
+        position: absolute;
+        left:600px;
+        top:45px;
+    }
+
+    .footer-container {
+        width:510px;
+        text-align: left;
+    }
+
+    /* Break lines */
+
+    .hr-over {
+        display:none;
     }
